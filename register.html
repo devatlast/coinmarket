@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CoinMarket - Create Account</title>
+
+    <link rel="stylesheet" href="./src/style.css">
+
+</head>
+
+<body class="auth-page">
+
+    <main class="auth-container">
+
+        <div class="auth-card">
+
+            <div class="auth-logo">
+
+                CoinMarket
+
+            </div>
+
+            <h1>Create your account</h1>
+
+            <p class="auth-subtitle">
+
+                Get started with your digital wallet
+
+            </p>
+
+            <form id="registerForm">
+
+                <label for="name">
+
+                    Full Name
+
+                </label>
+
+                <input
+
+                    type="text"
+
+                    id="name"
+
+                    placeholder="Your name"
+
+                    required
+
+                >
+
+                <label for="email">
+
+                    Email
+
+                </label>
+
+                <input
+
+                    type="email"
+
+                    id="email"
+
+                    placeholder="you@example.com"
+
+                    required
+
+                >
+
+                <label for="password">
+
+                    Password
+
+                </label>
+
+                <input
+
+                    type="password"
+
+                    id="password"
+
+                    placeholder="Create a password"
+
+                    required
+
+                >
+
+                <button
+
+                    type="submit"
+
+                    class="primary-btn"
+
+                >
+
+                    Create Account
+
+                </button>
+
+            </form>
+
+            <p id="message" class="auth-message"></p>
+
+            <p class="auth-footer">
+
+                Already have an account?
+
+                <a href="index.html">
+
+                    Login
+
+                </a>
+
+            </p>
+
+        </div>
+
+    </main>
+
+    <script src="./src/register.js"></script>
+
+</body>
+
+</html>

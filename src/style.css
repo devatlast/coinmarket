@@ -1,0 +1,495 @@
+* {
+
+    box-sizing: border-box;
+
+    margin: 0;
+
+    padding: 0;
+
+}
+
+body {
+
+    font-family: Arial, sans-serif;
+
+    background: #f5f7fb;
+
+    color: #171717;
+
+}
+
+.navbar {
+
+    height: 70px;
+
+    background: white;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 0 7%;
+
+    border-bottom: 1px solid #eee;
+
+}
+
+.logo {
+
+    font-size: 22px;
+
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.logout-btn {
+
+    border: none;
+
+    background: transparent;
+
+    cursor: pointer;
+
+    font-size: 15px;
+
+}
+
+.dashboard {
+
+    width: 90%;
+
+    max-width: 1000px;
+
+    margin: 40px auto;
+
+}
+
+.welcome {
+
+    margin-bottom: 25px;
+
+}
+
+.small-text {
+
+    color: #777;
+
+    font-size: 14px;
+
+    margin-bottom: 6px;
+
+}
+
+.welcome h1 {
+
+    font-size: 32px;
+
+}
+
+.balance-card {
+
+    background: blue;
+
+    color: white;
+
+    border-radius: 18px;
+
+    padding: 30px;
+
+    margin-bottom: 25px;
+
+}
+
+.balance-card p {
+
+    color: #bbb;
+
+}
+
+.balance-card h2 {
+
+    font-size: 42px;
+
+    margin: 15px 0 25px;
+
+}
+
+.balance-card button,
+
+.primary-btn {
+
+    border: none;
+
+    padding: 13px 22px;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    font-weight: bold;
+
+}
+
+.balance-card button {
+
+    background: white;
+
+    color: #171717;
+
+}
+
+.card {
+
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    margin-bottom: 25px;
+
+    border: 1px solid #eee;
+
+}
+
+.card h2 {
+
+    margin-bottom: 8px;
+
+}
+
+.section-description {
+
+    color: #777;
+
+    margin-bottom: 25px;
+
+}
+
+.card label {
+
+    display: block;
+
+    margin-top: 18px;
+
+    margin-bottom: 7px;
+
+    font-weight: bold;
+
+}
+
+.card input,
+
+.card select {
+
+    width: 100%;
+
+    padding: 13px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 8px;
+
+    font-size: 15px;
+
+}
+
+.primary-btn {
+
+    margin-top: 25px;
+
+    width: 100%;
+
+    background: blue;
+
+    color: white;
+
+}
+
+.hidden {
+
+    display: none;
+
+}
+
+.transactions {
+
+    background: white;
+
+    border-radius: 15px;
+
+    padding: 30px;
+
+    border: 1px solid #eee;
+
+}
+
+.section-header {
+
+    margin-bottom: 20px;
+
+}
+
+.transaction {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 18px 0;
+
+    border-bottom: 1px solid #eee;
+
+}
+
+.transaction:last-child {
+
+    border-bottom: none;
+
+}
+
+.transaction-info h3 {
+
+    font-size: 16px;
+
+    margin-bottom: 5px;
+
+}
+
+.transaction-info p {
+
+    color: #777;
+
+    font-size: 13px;
+
+}
+
+.transaction-amount {
+
+    font-weight: bold;
+
+}
+
+.success {
+
+    color: green;
+
+}
+
+.loading {
+
+    color: #777;
+
+}
+
+@media (max-width: 600px) {
+
+    .dashboard {
+
+        width: 94%;
+
+        margin: 25px auto;
+
+    }
+
+    .navbar {
+
+        padding: 0 4%;
+
+    }
+
+    .balance-card h2 {
+
+        font-size: 32px;
+
+    }
+
+    .transaction {
+
+        gap: 15px;
+
+    }
+
+}
+
+/* =========================
+
+   AUTH PAGES
+
+========================= */
+
+.auth-page {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #f5f7fb;
+
+}
+
+.auth-container {
+
+    width: 90%;
+
+    max-width: 430px;
+
+}
+
+.auth-card {
+
+    background: white;
+
+    padding: 40px;
+
+    border-radius: 18px;
+
+    border: 1px solid #eee;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+
+}
+
+.auth-logo {
+
+    font-size: 24px;
+
+    font-weight: bold;
+
+    margin-bottom: 35px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.auth-card h1 {
+
+    font-size: 30px;
+
+    margin-bottom: 8px;
+
+}
+
+.auth-subtitle {
+
+    color: #777;
+
+    margin-bottom: 30px;
+
+}
+
+.auth-card form {
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+.auth-card label {
+
+    font-weight: bold;
+
+    font-size: 14px;
+
+    margin-bottom: 7px;
+
+    margin-top: 18px;
+
+}
+
+.auth-card input {
+
+    width: 100%;
+
+    padding: 14px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 8px;
+
+    font-size: 15px;
+
+    outline: none;
+
+}
+
+.auth-card input:focus {
+
+    border-color: #171717;
+
+}
+
+.auth-card .primary-btn {
+
+    margin-top: 25px;
+
+    width: 100%;
+
+    background: blue;
+
+    color: white;
+
+}
+
+.auth-message {
+
+    text-align: center;
+
+    margin-top: 15px;
+
+    font-size: 14px;
+
+}
+
+.auth-footer {
+
+    text-align: center;
+
+    margin-top: 25px;
+
+    color: #777;
+
+    font-size: 14px;
+
+}
+
+.auth-footer a {
+
+    color: #171717;
+
+    font-weight: bold;
+
+    text-decoration: none;
+
+}
+
+.auth-footer a:hover {
+
+    text-decoration: underline;
+
+}
+
+@media (max-width: 500px) {
+
+    .auth-card {
+
+        padding: 30px 22px;
+
+    }
+
+    .auth-card h1 {
+
+        font-size: 26px;
+
+    }
+
+}

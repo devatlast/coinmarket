@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Wallet Dashboard</title>
+
+    <link rel="stylesheet" href="./src/style.css">
+
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+        <div class="logo">
+
+            CoinMarket
+
+        </div>
+
+        <button id="logoutBtn" class="logout-btn">
+
+            Logout
+
+        </button>
+
+    </nav>
+
+    <main class="dashboard">
+
+        <!-- Welcome -->
+
+        <section class="welcome">
+
+            <p class="small-text">
+
+                Welcome back
+
+            </p>
+
+            <h1>
+
+                <span id="userName">User</span> 👋
+
+            </h1>
+
+        </section>
+
+        <!-- Balance -->
+
+        <section class="balance-card">
+
+            <p>Available Balance</p>
+
+            <h2 id="balance">
+
+                $0.00
+
+            </h2>
+
+            <button id="sendMoneyBtn">
+
+                Send Money
+
+            </button>
+
+        </section>
+
+        <!-- Send Money -->
+
+        <section id="sendForm" class="card hidden">
+
+            <h2>Send Money</h2>
+
+            <p class="section-description">
+
+                Choose where you want to send your money.
+
+            </p>
+
+            <label for="destination">
+
+                Destination
+
+            </label>
+
+            <select id="destination">
+
+                <option value="chime">
+
+                    Chime
+
+                </option>
+
+                <option value="cashapp">
+
+                    Cash App
+
+                </option>
+
+                <option value="paypal">
+
+                    PayPal
+
+                </option>
+
+            </select>
+
+            <label for="recipientEmail">
+
+                Recipient Email
+
+            </label>
+
+            <input
+
+                type="email"
+
+                id="recipientEmail"
+
+                placeholder="recipient@example.com"
+
+            >
+
+            <label for="amount">
+
+                Amount
+
+            </label>
+
+            <input
+
+                type="number"
+
+                id="amount"
+
+                placeholder="0.00"
+
+                min="1"
+
+            >
+
+            <button id="submitTransaction" class="primary-btn">
+
+                Send Money
+
+            </button>
+
+            <p id="transactionMessage"></p>
+
+        </section>
+
+        <!-- Receipt -->
+
+        <section id="receipt" class="card hidden">
+
+            <h2>Transaction Receipt</h2>
+
+            <div id="receiptContent"></div>
+
+        </section>
+
+        <!-- Transactions -->
+
+        <section class="transactions">
+
+            <div class="section-header">
+
+                <div>
+
+                    <p class="small-text">
+
+                        Activity
+
+                    </p>
+
+                    <h2>
+
+                        Recent Transactions
+
+                    </h2>
+
+                </div>
+
+            </div>
+
+            <div id="transactionList">
+
+                <p class="loading">
+
+                    Loading transactions...
+
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="./src/dashboard.js"></script>
+
+</body>
+
+</html>
